@@ -3,7 +3,7 @@
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
-# 
+#
 # http://www.apache.org/licenses/LICENSE-2.0
 #
 # Unless required by applicable law or agreed to in writing, software
@@ -24,7 +24,7 @@
 set -e
 
 # Array of supported versions
-declare -a versions=('trusty' 'xenial' 'yakkety' 'bionic');
+declare -a versions=('trusty' 'xenial' 'yakkety', 'bionic');
 
 # check the version and extract codename of ubuntu if release codename not provided by user
 if [ -z "$1" ]; then
@@ -37,7 +37,7 @@ fi
 
 # check version is supported
 if echo ${versions[@]} | grep -q -w ${CODENAME}; then
-    echo "Installing Hyperledger Composer prereqs for Ubuntu ${CODENAME}"
+    echo "Installing Hyperledger prereqs for Ubuntu ${CODENAME}"
 else
     echo "Error: Ubuntu ${CODENAME} is not supported"
     exit 1
@@ -50,11 +50,7 @@ sudo apt-get update
 
 # Install Git
 echo "# Installing Git"
-sudo apt-get -y install git
-
-#install curl
-echo "# Installing curl"
-sudo apt-get -y install curl
+sudo apt-get install -y git
 
 # Install nvm dependencies
 echo "# Installing nvm dependencies"
@@ -77,10 +73,16 @@ nvm use 8
 # Ensure that CA certificates are installed
 sudo apt-get -y install apt-transport-https ca-certificates
 
-#Installing Python
-echo "Installing Python"
-sudo apt-get -y install python
+# Install python v2 if required
+set +e
+COUNT="$(python -V 2>&1 | grep -c 2.)"
+if [ ${COUNT} -ne 1 ]
+then
+   sudo apt-get install -y python-minimal
+fi
 
+# Install unzip, required to install hyperledger fabric.
+sudo apt-get -y install unzip
 
 # Print installation details for user
 echo ''
@@ -90,6 +92,8 @@ echo -n 'Node:           '
 node --version
 echo -n 'npm:            '
 npm --version
+echo -n 'Python:         '
+python -V
 
 # Print reminder of need to logout in order for these changes to take effect!
 echo ''
