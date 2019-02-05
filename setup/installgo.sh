@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### https://github.com/adnanjee/hyperledger-fabric-1.4.0.git ###
+### https://github.com/adnanjee/hyperledger-1.3.0.git ###
 
 ### Download golang ###
 
@@ -22,11 +22,11 @@ if [ -z $GOROOT ]
 then
     echo "export GOROOT=/usr/local/go" >> ~/.profile
     echo "export PATH=$PATH:/usr/local/go/bin" >> ~/.profile
-    echo "export GOPATH=${PWD}/../gopath" >> ~/.profile
+    echo "export GOPATH=/home/$USER/gopath" >> ~/.profile
     echo "### Updated .profile with GOROOT/GOPATH/PATH ###"
 
     echo "export GOROOT=/usr/local/go" >> ~/.bashrc
-    echo "export GOPATH=${PWD}/../gopath" >> ~/.bashrc
+    echo "export GOPATH=/home/$USER/gopath" >> ~/.bashrc
     echo "### Updated .profile with GOROOT/GOPATH/PATH ###"
 
 
