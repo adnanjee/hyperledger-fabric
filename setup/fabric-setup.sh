@@ -9,7 +9,7 @@ echo "GOROOT=$GOROOT"
 
 echo "### Starting to Download Fabric ###"
 
-curl -sSL https://bit.ly/2ysbOFE | bash -s 1.4.0 1.4.0 0.4.14
+curl -sSL https://bit.ly/2ysbOFE | bash -s 1.4.1 1.4.1 0.4.15
 
 
 echo "### Copy the binaries from fabric-samples/bin to /usr/local/bin ###"
