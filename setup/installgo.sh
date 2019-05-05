@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### https://github.com/adnanjee/hyperledger-fabric-1.4.0 ###
+### https://github.com/adnanjee/hyperledger-fabric-1.4.1 ###
 
 ### Download golang ###
 
