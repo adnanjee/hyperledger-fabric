@@ -78,14 +78,11 @@ nvm use 8
 # Ensure that CA certificates are installed
 sudo apt-get -y install apt-transport-https ca-certificates
 
-# Install python v2 if required
-set +e
-COUNT="$(python -V 2>&1 | grep -c 2.)"
-if [ ${COUNT} -ne 1 ]
-then
-   sudo apt-get install -y python-minimal
-fi
+# Install python v2 and v3 
 
+   sudo apt-get install -y python
+   sudo apt-get install -y phthon3
+   
 # Install unzip, required to install hyperledger fabric.
 sudo apt-get -y install unzip
 
