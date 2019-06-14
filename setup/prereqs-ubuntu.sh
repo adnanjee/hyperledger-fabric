@@ -48,6 +48,11 @@ echo "# Updating package lists"
 sudo apt-add-repository -y ppa:git-core/ppa
 sudo apt-get update
 
+#Install curl
+
+echo "# Installing curl"
+sudo apt-get install -y curl
+
 # Install Git
 echo "# Installing Git"
 sudo apt-get install -y git
