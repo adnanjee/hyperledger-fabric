@@ -81,7 +81,7 @@ sudo apt-get -y install apt-transport-https ca-certificates
 # Install python v2 and v3 
 
    sudo apt-get install -y python
-   sudo apt-get install -y phthon3
+   sudo apt-get install -y python3
    
 # Install unzip, required to install hyperledger fabric.
 sudo apt-get -y install unzip
