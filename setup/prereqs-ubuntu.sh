@@ -86,6 +86,9 @@ sudo apt-get -y install apt-transport-https ca-certificates
 # Install unzip, required to install hyperledger fabric.
 sudo apt-get -y install unzip
 
+. ~/.profile
+. ~/.bashrc
+
 # Print installation details for user
 echo ''
 echo 'Installation completed, versions installed are:'
@@ -99,4 +102,4 @@ python -V
 
 # Print reminder of need to logout in order for these changes to take effect!
 echo ''
-echo "Please logout then login before continuing."
+echo "#### Done ###"

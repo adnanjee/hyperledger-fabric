@@ -34,4 +34,7 @@ else
     echo "### No Change made to .profile ###"
 fi
 
-echo "### Done. PLEASE LOG OUT & LOG Back In and validate by executing go version"
+. ~/.profile
+. ~/.bashrc
+
+echo "### Done ###"

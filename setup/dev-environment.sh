@@ -22,4 +22,7 @@ echo "Installing Composer Playground"
 
 npm install -g composer-playground@0.20
 
-echo "Logot and Login Back to Complete Installaions"
+. ~/.profile
+. ~/.bashrc
+
+echo "Installaions Done"

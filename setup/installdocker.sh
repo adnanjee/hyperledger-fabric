@@ -64,5 +64,7 @@
 
 ### Remember to log out and back in for this to take effect! ###
 
-	echo "### Please log out and login back for take effect!!! ###"
-	echo "### Run command \"docker version\" to confirm successfull installation after login back to system"
+	. ~/.profile
+	. ~/.bashrc
+
+	echo "### Done ###"

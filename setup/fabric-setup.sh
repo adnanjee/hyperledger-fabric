@@ -4,6 +4,9 @@
 
 export PATH=$PATH:$GOROOT/bin
 
+. ~/.profile
+. ~/.bashrc
+
 echo "GOPATH=$GOPATH"
 echo "GOROOT=$GOROOT"
 
@@ -41,5 +44,8 @@ echo "### Setting up the HLF Shim ###"
 
 mkdir -p  $GOPATH/src/github.com/hyperledger
 go get -u --tags nopkcs11 github.com/hyperledger/fabric/core/chaincode/shim
+
+. ~/.profile
+. ~/.bashrc
 
 echo "### Installaion is completed ###"

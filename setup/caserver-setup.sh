@@ -21,6 +21,9 @@ cp $GOPATH/bin/*    ${PWD}/../bin
 
 sudo rm $GOPATH/bin/* 
 
+. ~/.profile
+. ~/.bashrc
+
 echo "Done. please confirm your installaion by issuing commands fabric-ca-server version & fabric-ca-client version"
 
 
