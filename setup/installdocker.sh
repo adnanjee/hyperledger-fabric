@@ -31,11 +31,13 @@
 
 	echo "### Set up the stable repository ###"
 
-	sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+	sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
 ### Update the apt package index ###
 
 	echo "### Update the apt package index ###"
+	
+	sudo apt-get update
 
 ### Install the latest version of Docker CE ###
 
