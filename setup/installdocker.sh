@@ -13,7 +13,7 @@
 
 	echo "### Update the apt package index ###"
 
-	sudo apt-get Update
+	sudo apt-get update
 
 ### Install packages to allow apt to use a repository over HTTPS ###
 
