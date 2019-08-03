@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### https://github.com/adnanjee/hyperledger-fabric-1.4.1.git ###
+### https://github.com/adnanjee/hyperledger-fabric-1.4.git ###
 
 export PATH=$PATH:$GOROOT/bin
 
@@ -12,7 +12,7 @@ echo "GOROOT=$GOROOT"
 
 echo "### Starting to Download Fabric ###"
 
-curl -sSL https://bit.ly/2ysbOFE | bash -s 1.4.1 1.4.1 0.4.15
+curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.2 1.4.2 0.4.15
 
 
 echo "### Copy the binaries from fabric-samples/bin to /usr/local/bin ###"
