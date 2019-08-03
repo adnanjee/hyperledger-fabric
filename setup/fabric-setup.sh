@@ -14,7 +14,6 @@ echo "### Starting to Download Fabric ###"
 
 curl -sSL http://bit.ly/2ysbOFE | bash -s -- 1.4.2 1.4.2 0.4.15
 
-
 echo "### Copy the binaries from fabric-samples/bin to /usr/local/bin ###"
 
 sudo cp fabric-samples/bin/*    /usr/local/bin
