@@ -10,7 +10,7 @@ It will not update your already set $GOPATH. To check run the following comman i
 This installaion assumes that your $GOPATH is parent directory of setup folder.
 
 1) open terminal and clone repository $ git clone https://github.com/adnanjee/hyperledger-fabric.git
-2) $ cd hyperledger-1.4.1/setup
+2) $ cd hyperledger-fabric/setup
 3) $ chmod u+x *
 4) $ ./prereqs.sh
 5) $ ./installgo.sh 
