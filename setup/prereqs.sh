@@ -24,7 +24,7 @@
 set -e
 
 # Array of supported versions
-declare -a versions=('trusty' 'xenial' 'yakkety', 'bionic', 'cosmic', 'disco', 'tessa');
+declare -a versions=('trusty' 'xenial' 'yakkety', 'bionic', 'cosmic', 'disco', 'focal', 'tessa');
 
 # check the version and extract codename of ubuntu if release codename not provided by user
 if [ -z "$1" ]; then
@@ -72,8 +72,8 @@ export NVM_DIR="${HOME}/.nvm"
 
 # Install node
 echo "# Installing nodeJS"
-nvm install 8
-nvm use 8
+nvm install 12.16.3
+nvm use 12
 
 # Ensure that CA certificates are installed
 sudo apt-get -y install apt-transport-https ca-certificates
