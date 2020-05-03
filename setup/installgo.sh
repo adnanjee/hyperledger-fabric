@@ -1,20 +1,20 @@
 #!/bin/bash
 
-### https://github.com/adnanjee/hyperledger-fabric-1.4.git ###
+### https://github.com/adnanjee/hyperledger-fabric.git ###
 
 ### Download golang ###
 
 echo "Downloading golang"
 
-curl -O https://dl.google.com/go/go1.12.7.linux-amd64.tar.gz
+curl -O https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
 
-tar xvf go1.12.7.linux-amd64.tar.gz
+tar xvf go1.14.2.linux-amd64.tar.gz
 
 ### Moving go to /usr/local ###
 
 sudo mv  go /usr/local
 
-rm go1.12.7.linux-amd64.tar.gz
+rm go1.14.2.linux-amd64.tar.gz
 
 
 # If GOROOT already set then DO Not set it again
