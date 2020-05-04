@@ -69,7 +69,7 @@ export NVM_DIR="${HOME}/.nvm"
 # Install node
 echo "# Installing nodeJS"
 nvm install 12.16.3
-nvm use 12
+nvm alias default 12.16.3
 
 # Ensure that CA certificates are installed
 sudo apt-get -y install apt-transport-https ca-certificates
