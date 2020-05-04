@@ -54,7 +54,10 @@ echo "# Installing curl"
 sudo apt-get install -y curl
 
 # Install node
-sudo apt install nodejs
+sudo apt install -y nodejs
+
+# Install npm
+sudo apt install -y npm
 
 # Ensure that CA certificates are installed
 sudo apt-get -y install apt-transport-https ca-certificates
