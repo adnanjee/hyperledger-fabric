@@ -89,6 +89,7 @@ sudo apt-get -y install unzip
 
 . ~/.profile
 . ~/.bashrc
+source ~/.bashrc
 
 # Print installation details for user
 echo ''
