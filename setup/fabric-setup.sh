@@ -12,7 +12,7 @@ echo "GOROOT=$GOROOT"
 
 echo "### Starting to Download Fabric ###"
 
-bash fabric-bootstrap.sh 2.2.1 1.4.9
+sudo bash fabric-bootstrap.sh 2.2.1 1.4.9
 
 echo "### Copy the binaries from fabric-samples/bin to /usr/local/bin ###"
 
