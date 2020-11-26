@@ -6,15 +6,15 @@
 
 echo "Downloading golang"
 
-curl -O https://dl.google.com/go/go1.14.2.linux-amd64.tar.gz
+curl -O https://dl.google.com/go/go1.15.5.linux-amd64.tar.gz
 
-tar xvf go1.14.2.linux-amd64.tar.gz
+tar xvf go1.15.5.linux-amd64.tar.gz
 
 ### Moving go to /usr/local ###
 
 sudo mv  go /usr/local
 
-rm go1.14.2.linux-amd64.tar.gz
+rm go1.15.5.linux-amd64.tar.gz
 
 
 # If GOROOT already set then DO Not set it again
