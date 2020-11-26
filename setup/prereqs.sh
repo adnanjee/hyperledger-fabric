@@ -64,7 +64,7 @@ sudo apt-get -y install build-essential libssl-dev
 
 # Execute nvm installation script
 echo "# Executing nvm installation script"
-curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
+sudo bash nvm.sh
 
 # Set up nvm environment without restarting the shell
 export NVM_DIR="${HOME}/.nvm"
