@@ -11,7 +11,7 @@ This installaion assumes that your $GOPATH is parent directory of setup folder.
 
 1) open terminal and clone repository $ git clone https://github.com/adnanjee/hyperledger-fabric.git or download directly to home directory.
 2) $ cd hyperledger-fabric/setup
-3) $ chmod u+x *
+3) $ chmod u+x *   (For autoinstall run ./autoinstall.sh and skip the next steps)
 4) $ ./prereqs.sh
 5) $ ./installgo.sh 
 6) $ ./installdocker.sh
