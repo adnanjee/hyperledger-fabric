@@ -64,7 +64,7 @@ sudo apt-get -y install build-essential libssl-dev
 
 # Execute nvm installation script
 echo "# Executing nvm installation script"
-sudo bash nvm.sh
+bash nvm.sh
 
 # Set up nvm environment without restarting the shell
 export NVM_DIR="${HOME}/.nvm"
@@ -87,8 +87,7 @@ sudo apt-get -y install apt-transport-https ca-certificates
 # Install unzip, required to install hyperledger fabric.
 sudo apt-get -y install unzip
 
-. ~/.profile
-. ~/.bashrc
+source ~/.profile
 source ~/.bashrc
 
 # Print installation details for user
