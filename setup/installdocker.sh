@@ -65,7 +65,7 @@
 
 ### Remember to log out and back in for this to take effect! ###
 
-	. ~/.profile
-	. ~/.bashrc
+	source ~/.profile
+	source ~/.bashrc
 
 	echo "### Done ###"
