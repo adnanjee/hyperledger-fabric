@@ -48,6 +48,11 @@ echo "# Updating package lists"
 sudo apt-add-repository -y ppa:git-core/ppa
 sudo apt-get update
 
+#Install git
+
+echo "#Installing git"
+sudo apt-get install -y git
+
 #Install curl
 
 echo "# Installing curl"
@@ -68,8 +73,8 @@ export NVM_DIR="${HOME}/.nvm"
 
 # Install node
 echo "# Installing nodeJS"
-nvm install 12.16.3
-nvm alias default 12.16.3
+nvm install 14.15.1
+nvm alias default 14.15.1
 
 # Ensure that CA certificates are installed
 sudo apt-get -y install apt-transport-https ca-certificates
