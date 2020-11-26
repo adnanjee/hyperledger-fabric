@@ -4,8 +4,8 @@
 
 export PATH=$PATH:$GOROOT/bin
 
-. ~/.profile
-. ~/.bashrc
+source ~/.profile
+source ~/.bashrc
 
 echo "GOPATH=$GOPATH"
 echo "GOROOT=$GOROOT"
@@ -23,7 +23,7 @@ echo "### Copy the binaries from fabric-samples/bin to bin folder for future use
 mkdir -p ${PWD}/../bin
 cp fabric-samples/bin/*    ${PWD}/../bin
 
-. ~/.profile
-. ~/.bashrc
+source ~/.profile
+source ~/.bashrc
 
 echo "### Installaion is completed ###"
