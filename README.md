@@ -9,7 +9,7 @@ If you already installed go language please pay attention to your already exist 
 It will not update your already set $GOPATH. To check run the following comman in terminal: echo $GOPATH
 This installaion assumes that your $GOPATH is parent directory of setup folder.
 
-1) open terminal and clone repository $ git clone https://github.com/adnanjee/hyperledger-fabric.git
+1) open terminal and clone repository $ git clone https://github.com/adnanjee/hyperledger-fabric.git or download directly to home directory.
 2) $ cd hyperledger-fabric/setup
 3) $ chmod u+x *
 4) $ ./prereqs.sh
@@ -18,6 +18,5 @@ This installaion assumes that your $GOPATH is parent directory of setup folder.
 4) $ ./fabric-setup.sh
 5) $ ./caserver-setup.sh
 6) $ ./jq.sh
-7) $ ./dev-environment.sh
 
 You fabric is ready in native environment. Fabric-Samples folder has all the scripts to run your business network on fabric.
