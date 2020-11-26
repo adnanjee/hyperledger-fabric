@@ -34,7 +34,7 @@ else
     echo "### No Change made to .profile ###"
 fi
 
-. ~/.profile
-. ~/.bashrc
+source ~/.profile
+source ~/.bashrc
 
 echo "### Done ###"
