@@ -19,4 +19,6 @@ This installaion assumes that your $GOPATH is parent directory of setup folder.
 5) $ ./caserver-setup.sh
 6) $ ./jq.sh
 
-You fabric is ready in native environment. Fabric-Samples folder has all the scripts to run your business network on fabric.
+For node and python installation please run dev-env.sh
+
+You fabric is ready in native environment. Fabric-Samples folder has all the scripts to run your business network on fabric. 
