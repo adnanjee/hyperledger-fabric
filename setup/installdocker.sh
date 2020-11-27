@@ -1,6 +1,6 @@
 #!/bin/bash
 
-### https://github.com/adnanjee/hyperledger-fabric-1.4.git ###
+### https://github.com/adnanjee/hyperledger-fabric.git ###
 
 ### Uninstall  Older Docker Installaions ###
 	source ~/.profile
