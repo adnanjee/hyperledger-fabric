@@ -1,3 +1,4 @@
+sudo chmod u+x
 bash prereqs.sh
 source ~/.profile
 source ~/.bashrc
