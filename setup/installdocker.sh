@@ -25,7 +25,7 @@
 
 	echo "###  Add Docker’s official GPG key ###"
 
-	curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+	curl -fsSL https://download.docker.com/linux/ubuntu/dists/focal/Release.gpg | sudo apt-key add -
 
 ### Set up the stable repository ###
 
