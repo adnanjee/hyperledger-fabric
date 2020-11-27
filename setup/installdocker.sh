@@ -3,6 +3,8 @@
 ### https://github.com/adnanjee/hyperledger-fabric-1.4.git ###
 
 ### Uninstall  Older Docker Installaions ###
+	source ~/.profile
+        source ~/.bashrc
 
 	echo "### Uninstall Older Docker Installations ###"
 
