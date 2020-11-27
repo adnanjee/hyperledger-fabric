@@ -9,6 +9,7 @@
 	echo "### Uninstall Older Docker Installations ###"
 
 	sudo apt-get remove -y docker docker-engine docker.io
+	sudo apt-get remove docker docker-engine docker.io containerd runc
 
 
 ### Update the apt package index ###
@@ -27,7 +28,7 @@
 
 	echo "###  Add Docker’s official GPG key ###"
 
-	curl -fsSL https://download.docker.com/linux/ubuntu/dists/focal/Release.gpg | sudo apt-key add -
+	curl -fsSL https://download.docker.com/linux/debian/gpg | sudo apt-key add -
 
 ### Set up the stable repository ###
 
@@ -45,7 +46,7 @@
 
 	echo "Install the latest version of Docker CE"
 
-	sudo apt-get -y install docker-ce
+	sudo apt-get -y install docker-ce docker-ce-cli containerd.io
 
 ### Verify that Docker CE is installed correctly by running the hello-world image ###
 
