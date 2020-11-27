@@ -19,7 +19,7 @@ sudo cp $GOPATH/bin/*    /usr/local/bin
 
 cp $GOPATH/bin/*    ${PWD}/../bin
 
-sudo rm $GOPATH/bin/* 
+rm $GOPATH/bin/* 
 
 source ~/.profile
 source ~/.bashrc
