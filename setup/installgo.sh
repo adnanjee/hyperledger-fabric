@@ -28,6 +28,8 @@ then
     echo "export GOROOT=/usr/local/go" >> ~/.bashrc
     echo "export GOPATH=/home/$USER/gopath" >> ~/.bashrc
     echo "### Updated .profile with GOROOT/GOPATH/PATH ###"
+    source ~/.profile
+    source ~/.bashrc
 
 
 else
