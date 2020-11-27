@@ -22,6 +22,8 @@ echo "### Copy the binaries from fabric-samples/bin to bin folder for future use
 
 mkdir -p ${PWD}/../bin
 cp fabric-samples/bin/*    ${PWD}/../bin
+cp -r fabric-samples ${PWD}/../
+sudo rm -r fabric-samples
 
 source ~/.profile
 source ~/.bashrc
