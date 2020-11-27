@@ -4,4 +4,10 @@
 
 # Installs the JQ Utility
 
+source ~/.profile
+source ~/.bashrc
+
 sudo apt-get install -y jq
+
+source ~/.profile
+source ~/.bashrc
