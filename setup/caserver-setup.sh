@@ -19,8 +19,8 @@ sudo cp $GOPATH/bin/*    /usr/local/bin
 
 cp $GOPATH/bin/*    ${PWD}/../bin
 
-sudo rm $GOPATH/bin/* 
-sudo rm $GOPATH/src/*
+sudo rm -r $GOPATH/bin/* 
+sudo rm -r $GOPATH/src/*
 
 source ~/.profile
 source ~/.bashrc
