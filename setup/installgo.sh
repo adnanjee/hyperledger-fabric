@@ -6,9 +6,9 @@
 
 echo "Downloading golang"
 
-curl -O https://dl.google.com/go/go1.15.5.linux-amd64.tar.gz
+curl -O https://golang.org/dl/go1.15.7.linux-amd64.tar.gz
 
-tar xvf go1.15.5.linux-amd64.tar.gz
+tar xvf go1.15.7.linux-amd64.tar.gz
 
 ### Moving go to /usr/local ###
 
