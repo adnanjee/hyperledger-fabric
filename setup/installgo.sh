@@ -14,7 +14,7 @@ tar xvf go1.15.7.linux-amd64.tar.gz
 
 sudo mv  go /usr/local
 
-rm go1.15.5.linux-amd64.tar.gz
+rm go1.15.7.linux-amd64.tar.gz
 
 
 # If GOROOT already set then DO Not set it again
